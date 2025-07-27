@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-content{
+    width: 1170px;
+    margin: 0 auto;
+    max-width: calc(100% - 48px);
+}
+
+.btn{
+    display: inline-block;
+    padding: 0 16px;
+    min-width: 118px;
+    line-height: 50px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    background-color: #171110;
+    border-radius: 24.5px;
+}
+
+/* HEADER */
+.header{
+    background-color: #FFFCF4;
+}
+
+.header.fixed{
+    position: sticky;
+    top: -28px;
+}
+
+.header .body{
+    display: flex;
+    align-items: center;
+    padding: 36px 0 8px;
+}
+
+.header .nav{
+    margin-left: auto;
+}
+
+.header .nav ul{
+    display: flex;
+}
+
+.header .nav a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 21px;
+    font-size: 1.6rem;
+    color: #5f5b53;
+}
+
+.header .nav a:hover, .header .nav li.active a{
+    text-shadow: 1px 0 0 currentColor;
+    color: #171110;
+}
+
+.header .nav li.active a::after{
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 2px;
+    background-color: #171110;
+    border-radius: 1px;
+}
+
+.header .action{
+    margin-left: 49px;
+}
+
+.header .sign-up-btn{
+    min-width: 144px;
+}
